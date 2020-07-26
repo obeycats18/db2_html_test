@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <title>DB2</title>
+</head>
+<body>
+    <div class="root">
+        <aside class="sidebar">
+            <a href="/" class="logo">
+                <img class="logo__image" src="./images/logo.svg" alt="DB2 Limited">
+            </a>
+
+            <nav class="sidebar__menu">
+                <a href="/" class="menu__link">
+                    <span class="link__badge">1</span>
+                    <svg width='20' height='20'>
+                        <use href='./images/icons/calendar.svg#calendar'/>
+                    </svg>
+                </a>
+                <a href="/" class="menu__link">
+                    <svg width='20' height='20'>
+                        <use href='./images/icons/user.svg#user'/>
+                    </svg>
+                </a>
+                <a href="/" class="menu__link">
+                    <svg width='20' height='20'>
+                        <use href='./images/icons/settings.svg#settings'/>
+                    </svg>
+                </a>
+                <a href="/" class="menu__link">
+                    <svg width='20' height='20'>
+                        <use href='./images/icons/team.svg#team'/>
+                    </svg>
+                </a>
+                <a href="/" class="menu__link menu__link_active">
+                    <svg width='20' height='20'>
+                        <use href='./images/icons/messages.svg#messages'/>
+                    </svg>
+                </a>
+            </nav>
+        </aside>
+    
+        <div class="main">
+            <header class="top-bar">
+                <div class="pagination">
+                    <a class='pagination__link' href="/">Home</a>
+                    <svg class="pagination__angle" id='angle' width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.39626 5.15214L0.683169 1.38059C0.44685 1.14068 0.44685 0.751695 0.683169 0.511895C0.919278 0.272077 1.30222 0.272077 1.53831 0.511895L4.82383 3.84913L8.10923 0.511992C8.34543 0.272174 8.72834 0.272174 8.96445 0.511992C9.20065 0.751811 9.20065 1.14077 8.96445 1.38069L5.2513 5.15224C5.13319 5.27214 4.97856 5.33203 4.82385 5.33203C4.66906 5.33203 4.51431 5.27203 4.39626 5.15214Z" fill="#01134E"/>
+                    </svg>
+                    <a class='pagination__link pagination__link_current' href="/">Network</a>
+                </div>
+                <div class="account">
+                    <img class="account__image" src="./images/users/user-7.png" alt="Sarah Freeman">
+                    <p class="account__name">Sarah Freeman</p>
+                    <img class="account__angle" src="./images/icons/angle.svg" alt="Setting" >
+                </div>
+            </header>
+        
+            <main class="messages">
+                <div class="dialogs-list">
+                    <div class="receiver  receiver_mute">
+                        <!-- Обернул аватар в блок для того чтобы можно было пропорционально изменять размер изображения -->
+                        <div class="receiver__avatar">
+                            <img src="./images/users/user-1.png" alt="Miranda Hops">
+                        </div>
+                        <div class="receiver__info">
+                            <p class="receiver__name">
+                                Miranda Hops
+                                <span class="online-marker"></span>
+                                <img class="receiver__mute" src="./images/icons/mute.svg" alt="Mute">
+                            </p>
+                            <p class="last-message">Excepteur sint occaecatar…</p>
+                        </div>
+                        <div class="dispath-time">9:32</div>
+                    </div>
+                    <div class="receiver">
+                        <div class="receiver__avatar">
+                            <img src="./images/users/user-2.png" alt="Barry Callebaut">
+                        </div>
+                        <div class="receiver__info">
+                            <p class="receiver__name">
+                                Barry Callebaut
+                                <span class="online-marker"></span>
+                            </p>
+                            <p class="last-message">Nemo enim ipsam volupta…</p>
+                        </div>
+                        <div class="dispath-time">22:01</div>
+                    </div>
+                    <div class="receiver receiver_online receiver_selected">
+                        <div class="receiver__avatar">
+                            <img src="./images/users/user-3.png" alt="Stacey Dosh">
+                        </div>
+                        <div class="receiver__info">
+                            <p class="receiver__name">
+                                Stacey Dosh
+                                <span class="online-marker"></span>
+                            </p>
+                            <p class="last-message">Ut enim ad minima veniam…</p>
+                        </div>
+                        <div class="dispath-time">19:15</div>
+                    </div>
+                    <div class="receiver">
+                        <div class="receiver__avatar">
+                            <img src="./images/users/user-4.png" alt="Michael Kors">
+                        </div>
+                        <div class="receiver__info">
+                            <p class="receiver__name">
+                                Michael Kors
+                                <span class="online-marker"></span>
+                            </p>
+                            <p class="last-message">To take a trivial example…</p>
+                        </div>
+                        <div class="dispath-time">13:49</div>
+                    </div>
+                    <div class="receiver receiver_online">
+                        <div class="receiver__avatar">
+                            <img src="./images/users/user-5.png" alt="Johny Cash">
+                        </div>
+                        <div class="receiver__info">
+                            <p class="receiver__name">
+                                Johny Cash
+                                <span class="online-marker"></span>
+                            </p>
+                            <p class="last-message">Great explorer of the truth…</p>
+                        </div>
+                        <div class="dispath-time">10:25</div>
+                    </div>
+                    <div class="receiver">
+                        <div class="receiver__avatar">
+                            <img src="./images/users/user-6.png" alt="Stacey Dosh">
+                        </div>
+                        <div class="receiver__info">
+                            <p class="receiver__name">
+                                Stacey Dosh
+                                <span class="online-marker"></span>
+                            </p>
+                            <p class="last-message">Ut enim ad minima veniam…</p>
+                        </div>
+                        <div class="dispath-time">08:53</div>
+                    </div>
+                </div>
+                <div class="dialog">
+                    <div class="search-container">
+                        <img src="./images/icons/search.svg" alt="Search">
+                        <input type="text" placeholder="Search message...">
+                    </div>
+                    <div class="dialog__messages">
+                        <div class="message message_receiver">
+                            <div class="receiver-message__img">
+                                <img src="./images/users/user-3.png" alt="Stacey Dosh">      
+                            </div>
+                            <div class="message__container">
+                                <p class="message__text">On the other hand, we denounce with righteous indignation!</p>
+                                <div class="message__time">01:14</div>
+                            </div>
+                        </div>
+                        <div class="message message_author">
+                            <div class="message__container">
+                                <p class="message__text">Which is the same as saying?</p>
+                                <div class="message__time">01:38</div>
+                            </div>
+                        </div>
+                        <div class="message message_receiver">
+                            <div class="receiver-message__img">
+                                <img src="./images/users/user-3.png" alt="Stacey Dosh">      
+                            </div>
+                            <div class="message__container">
+                                <p class="message__text">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures </p>
+                                <div class="message__time">01:14</div>
+                            </div>
+                        </div>
+                        <div class="message message_author">
+                            <div class="message__container">
+                                <p class="message__text">To take a trivial example, which of us ever undertakes)</p>
+                                <div class="message__time">01:38</div>
+                            </div>
+                        </div>
+                        <div class="message message_receiver">
+                            <div class="receiver-message__img">
+                                <img src="./images/users/user-3.png" alt="Stacey Dosh">      
+                            </div>
+                            <div class="message__container">
+                                <p class="message__text">On the other hand, we denounce with righteous indignation!</p>
+                                <div class="message__time">01:14</div>
+                            </div>
+                        </div>
+                        <div class="message message_author">
+                            <div class="message__container">
+                                <p class="message__text">Which is the same as saying?</p>
+                                <div class="message__time">01:38</div>
+                            </div>
+                        </div>
+                        <div class="message message_receiver">
+                            <div class="receiver-message__img">
+                                <img src="./images/users/user-3.png" alt="Stacey Dosh">      
+                            </div>
+                            <div class="message__container">
+                                <p class="message__text">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures </p>
+                                <div class="message__time">01:14</div>
+                            </div>
+                        </div>
+                        <div class="message message_author">
+                            <div class="message__container">
+                                <p class="message__text">To take a trivial example, which of us ever undertakes)</p>
+                                <div class="message__time">01:38</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textarea-container">
+                        <textarea name="message" id="message" placeholder="Write a message..." cols="10" ></textarea>
+                        <div class="textarea__toolbar">
+                            <img src="./images/icons/smiles.svg" alt="Smiles">
+                            <img src="./images/icons/attach.svg" alt="Attach">
+                            <button class="send-btn">
+                                <img src="./images/icons/send.svg" alt="Send">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+   
+
+    <script src="./js/index.min.js"></script>
+</body>
+</html>
